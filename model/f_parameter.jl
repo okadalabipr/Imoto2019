@@ -11,7 +11,6 @@ const F_P = [
     "kPhRbCd"         #1/(AU*min)  CycD:CDK4/6-mediated Rb phosphorylation
     "kPhRbCe"         #1/(AU*min)  CycE:CDK2-mediated Rb phosphorylation
     "kDpRb"           #1/min  dephosphorylation of Rb
-    "kSyP21"          #AU/min  constitutive p21 synthesis
     "kDeP21"          #1/min  constitutive p21 degradation
     "kDeP21Cy"        #1/(AU*min)  cyclin:CDK2-mediated p21 degradation (Skp2-dependent)
     "kSyCe"           #1/min  constitutive CycE synthesis
@@ -57,7 +56,6 @@ function f_params()
     p[kPhRbCd] = 2.000e-01;
     p[kPhRbCe] = 3.000e-01;
     p[kDpRb] = 5.000e-02;
-    p[kSyP21] = 2.000e-03;
     p[kDeP21] = 2.500e-03;
     p[kDeP21Cy] = 7.000e-03;
     p[kSyCe] = 1.000e-02;
