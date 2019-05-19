@@ -6,10 +6,10 @@ rc("font",size = 20);
 rc("axes",linewidth = 1);
 rc("lines",linewidth = 2);
 rc("lines",markersize = 10);
-gca()[:spines]["right"][:set_visible](false);
-gca()[:spines]["top"][:set_visible](false);
-gca()[:yaxis][:set_ticks_position]("left");
-gca()[:xaxis][:set_ticks_position]("bottom");
+gca().spines["right"].set_visible(false);
+gca().spines["top"].set_visible(false);
+gca().yaxis.set_ticks_position("left");
+gca().xaxis.set_ticks_position("bottom");
 
 
 plot(fp[1:br[1]-1,VN+1],fp[1:br[1]-1,E2f+1],"k-");
