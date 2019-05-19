@@ -10,8 +10,6 @@ include("bifurcation_analysis/bifurcation.jl");
 const BP = mitogen;
 
 p = f_params();
-p[kon] = 1.0e-2;
-p[pAkt] = 1.0;
 
 newCurve(p);
 fp = readdlm("./Data/fp.dat",'\t',Float64,'\n');
