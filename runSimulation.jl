@@ -4,7 +4,7 @@ include("model/f_variable.jl");
 include("model/param_derivative.jl");
 include("model/steady_state.jl");
 include("model/differential_equation.jl");
-include("bifurcation_analysis/bifurcation.jl");
+include("Bifurcation/bifurcation.jl");
 
 # BP: name(index) of bifurcation parameter
 const BP = mitogen;
