@@ -10,7 +10,7 @@ const BP = mitogen;
 
 p = f_params();
 
-newCurve(p);
+newCurve!(p);
 
 const fp = readdlm("./Data/fp.dat",'\t',Float64,'\n');
 const ev = readdlm("./Data/ev.dat",'\t',Float64,'\n');
