@@ -1,3 +1,4 @@
+module C
 const F_P = [
     # Heldt et al., PNAS (2018)
     "tRb"             #AU  total level of Rb
@@ -42,44 +43,6 @@ for (index,value) in enumerate(F_P)
     eval(Meta.parse("const $value=$index"));
 end
 
-function f_params()
-    p::Vector{Float64} = zeros(length(F_P));
+const len_f_params = length(F_P);
 
-    p[tRb] = 5.000e+00;
-    p[Skp2] = 1.000e+00;
-    p[kSyE2f] = 3.000e-02;
-    p[kSyE2fE2f] = 4.000e-02;
-    p[jSyE2f] = 2.000e-01;
-    p[kAsRbE2f] = 5.000e+00;
-    p[kDsRbE2f] = 5.000e-03;
-    p[kDeE2f] = 5.000e-02;
-    p[kPhRbCd] = 2.000e-01;
-    p[kPhRbCe] = 3.000e-01;
-    p[kDpRb] = 5.000e-02;
-    p[kDeP21] = 2.500e-03;
-    p[kDeP21Cy] = 7.000e-03;
-    p[kSyCe] = 1.000e-02;
-    p[kAsCyP21] = 1.000e+00;
-    p[kDsCyP21] = 5.000e-02;
-    p[kDeCe] = 4.000e-03;
-    p[tP21] = 1.500e+00;
-
-    p[mitogen] = 1.000e+01;
-    p[DUSP] = 1.000e+00;
-    p[pAkt] = 1.000e+00;
-    p[kfRSK] = 1.735e+00;
-    p[krRSK] = 9.034e-01;
-    p[kSyCd] = 4.500e-3;
-    p[kDeCd] = 9.000e-3;
-    p[kon] = 1.000e-02;
-    p[koff] = 2.281e-03;
-    p[kf] = 4.650e-02;
-    p[kr] = 9.564e-02;
-    p[tERK] = 7.236e+01;
-    p[KmRSK] = 9.936e+01;
-    p[kfFOS] = 6.149e-03;
-    p[krFOS] = 1.475e-02;
-    p[KmFOS] = 1.123e-01;
-
-    return p
-end
+end  # module
