@@ -10,7 +10,7 @@ Imoto, H. & Okada, M. Signal-dependent regulation of early-response genes and ce
 
 ## Run Simulation and View Results
 ```julia
-include("main.jl")
+include("bifurcation.jl")
 using .Bifurcation
 
 Bifurcation.analysis()
