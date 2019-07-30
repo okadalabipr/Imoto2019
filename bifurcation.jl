@@ -1,3 +1,29 @@
+module Bifurcation
+
+using PyPlot;
+
+include("model/model.jl");
+using .Model;
+include("model/differentialEquation.jl");
+
+include("continuation.jl");
+
+function analysis()
+    global fp, br
+
+    # BP: name(index) of bifurcation parameter
+    global BP = C.mitogen;
+
+    global p = f_params();
+
+    newCurve!(p);
+
+    fp = readdlm("./Data/fp.dat",'\t',Float64,'\n');
+    ev = readdlm("./Data/ev.dat",'\t',Float64,'\n');
+    br = bistableRegime(ev);
+end
+
+
 function diagram()
     rc("figure",figsize = (8,6));
     rc("font",family = "Arial");
@@ -27,3 +53,5 @@ function diagram()
 
     show();
 end
+
+end  # module
