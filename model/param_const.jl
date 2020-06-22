@@ -1,5 +1,5 @@
 function param_values()::Vector{Float64}
-    p::Vector{Float64} = zeros(C.len_f_params)
+    p::Vector{Float64} = zeros(C.NUM)
 
     p[C.tRb] = 5.000e+00
     p[C.Skp2] = 1.000e+00
