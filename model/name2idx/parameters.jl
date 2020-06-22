@@ -1,5 +1,5 @@
 module C
-const param_names = [
+const NAMES = [
     # Heldt et al., PNAS (2018)
     "tRb"             #AU  total level of Rb
     "Skp2"            #-  relative SCF^Skp2 level
@@ -36,13 +36,13 @@ const param_names = [
     "kfFOS"
     "krFOS"
     "KmFOS"
-];
+]
 
 #name2idx
-for (idx,name) in enumerate(param_names)
-    eval(Meta.parse("const $name = $idx"));
+for (idx,name) in enumerate(NAMES)
+    eval(Meta.parse("const $name = $idx"))
 end
 
-const len_f_params = length(param_names);
+const NUM = length(NAMES)
 
 end  # module
