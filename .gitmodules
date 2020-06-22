@@ -1,0 +1,3 @@
+[submodule "bifurcation"]
+	path = bifurcation
+	url = https://github.com/himoto/bifurcation

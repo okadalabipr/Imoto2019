@@ -19,7 +19,7 @@ function analysis()
 
     fp = readdlm("./Data/fp.dat",'\t',Float64,'\n')
     ev = readdlm("./Data/ev.dat",'\t',Float64,'\n')
-    br = bistableRegime(ev)
+    br = bistable_regime(ev)
 end
 
 
