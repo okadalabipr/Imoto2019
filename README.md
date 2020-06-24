@@ -1,7 +1,7 @@
 # Imoto2019
 Imoto, H. & Okada, M. Signal-dependent regulation of early-response genes and cell cycle: a quantitative view. *Curr. Opin. Syst. Biol.* **15**, 100–108 (2019). https://doi.org/10.1016/j.coisb.2019.04.003
 
-## Requirement
+## Requirements
 - **[Julia 1.0+](https://julialang.org)**
     - [SteadyStateDiffEq](https://github.com/JuliaDiffEq/SteadyStateDiffEq.jl)
     - [Sundials](https://github.com/JuliaDiffEq/Sundials.jl)
@@ -18,7 +18,7 @@ Bifurcation.diagram()
 ```
 
 ## Installation
-    $ git clone https://github.com/okadalabipr/Imoto2019.git
+    $ git clone --recursive https://github.com/okadalabipr/Imoto2019.git
 
 ## License
 [MIT](/LICENSE)
